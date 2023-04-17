@@ -2,11 +2,12 @@ import json
 from datetime import datetime
 
 
-def get_info_from_json():
+def get_info_from_json(file):
     """
     Открываем файл json, имеющийся в условии
     """
-    with open('operations.json', 'r', encoding='utf-8') as file:
+
+    with open(file, 'r', encoding='utf-8') as file:
         data = json.load(file)
         return data
 
